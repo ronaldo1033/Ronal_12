@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index_2.css">
+    <link rel="stylesheet" href="fuente/AsimovProBd.otf">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+    <div class="uno" style="text-align: center;">
+        <img src="img/3.gif" id="unoimg" style="display: inline-block;">
+    </div>
+    <div class="dos">
+        
+            <h2 class="dostext">¡Yapeaste!</h2>
+            <p class="dosuno"><span class="dosuno" id="nombreMostrado"></span></p>
+            
+            <p class="dostres"><span class="dostres" id="cantidadMostrada"></span></p>
+    
+    <div class="dosuno1">
+        <p class="dosunodos">Nº de celular:</p>
+        <p class="blanco">  l</p>
+        <span> </span>
+        <p class="dosdos"> <span class="dosdos" id="numeroMostrado"></span></p>
+    </div>
+    
+
+    <script>
+        var params = new URLSearchParams(window.location.search);
+        var nombre = params.get("nombre");
+        var numero = params.get("numero");
+        var cantidad = params.get("cantidad");
+
+        document.getElementById("nombreMostrado").textContent = nombre;
+        document.getElementById("numeroMostrado").textContent = numero;
+        document.getElementById("cantidadMostrada").textContent = cantidad;
+    </script>
+    <div class="dos1">
+        <p>Destino:</p> 
+        <p class="blanco">  l</p>
+        <p class="negro">Yape</p>
+    </div>
+    <div class="dos2">
+        <p>Nº de operacion: </p>
+        <p class="blanco">  l</p>  
+        <p class="negro">03843100</p>
+    </div>
+    <script>
+        function mostrarFechaYHora() {
+            var fecha = new Date(); // Obtiene la fecha y hora actual
+            var day = fecha.getDate();
+            var monthNames = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "set", "oct", "nov", "dic"];
+            var monthIndex = fecha.getMonth();
+            var year = fecha.getFullYear();
+            var hours = fecha.getHours();
+            var minutes = fecha.getMinutes();
+            var ampm = hours >= 12 ? 'pm' : 'am';
+            hours = hours % 12;
+            hours = hours ? (hours < 10 ? '0' + hours : hours) : '12';
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+
+            var fechaActual = day + " " + monthNames[monthIndex] + ". " + year + " - " + hours + ":" + minutes + " " + ampm;
+
+            // Muestra la fecha y hora en un elemento HTML
+            document.getElementById("fechaYHora").textContent = fechaActual;
+        }
+
+        // Llama a la función al cargar la página
+        window.onload = mostrarFechaYHora;
+    </script>
+     <div id="fechaYHora"></div>
+   <div id="fechaYHora"></div>
+   <img src="img/4.jpeg" alt="" class="dosunoimg">
+    </div>
+
+    <div class="bordesimg" style="text-align: center;">
+        <img class="imgabajo"  src="img/bordes.png" style="display: inline-block;">
+        <img src="img/bordesarriba.png" alt="" class="imgarriba" style="display: inline-block;" >
+    </div>
+    <div class="tres" style="text-align: center;">
+        <img id="tresimg" src="img/2.png" alt="" style="display: inline-block;">
+    </div>
+    </div>
+</body>
+</html>

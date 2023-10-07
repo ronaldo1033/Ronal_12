@@ -1,0 +1,171 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+
+    background: rgb(122, 48, 137);
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+}
+.uno{
+    height: 14em;
+
+    
+}
+#unoimg{
+    width: 80px;
+    margin-top: 5em;
+}
+.dos{
+  
+    height: 40.2em;
+    background: white;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.dos > p{
+    text-align: center;
+  
+}
+
+.dos .dosuno {
+    margin-top: 50%;
+    position: relative;
+    top: 16px;
+    font-size: 30px;
+    font-family: Asimov Print D font;
+    font-weight: 500;
+    color: #202e41;
+
+}
+.dos .dosdos{
+   
+    text-align: center;
+    display: inline;
+
+}
+.dosunodos{
+    display: inline;
+}
+.dos .dostres {
+    color: #742284;
+    position: relative;
+    bottom: 67px;
+    font-size: 85px;
+    margin-left: 0.22em;
+    font-family: roboto;
+}
+
+
+.dos h2{
+    text-align: center;
+    position: relative;
+    top: 60px;
+    font-size: 37px;
+    color: #732383;
+    font-family: AsimovProBd;
+}
+
+
+
+.tres{
+    height: 14em;
+}
+#tresimg{
+    margin-top: 0.9em;
+    width: 65%;
+    height: 64%;
+}
+html{
+    background: rgb(122, 48, 137);
+}
+
+.dosuno1{
+    border-top: 1px solid rgb(231, 228, 228);
+    border-bottom: 1px solid rgb(231, 228, 228);
+    position: relative;
+    top: 30px;
+    text-align: center;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: AsimovProBd;
+    color: #97979c;
+    font-size: 20px;
+}
+.dos1{
+  
+    text-align: center;
+    position: relative;
+    top: 30px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: AsimovProBd;
+    color: #97979c;
+    font-size: 20px;
+}
+.dos2{
+    border-top: 1px solid rgb(231, 228, 228);
+    border-bottom: 1px solid rgb(231, 228, 228);
+    text-align: center;
+    position: relative;
+    top: 30px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: AsimovProBd;
+    color: #97979c;
+    font-size: 20px;
+}
+#fechaYHora{
+    text-align: center;
+    position: relative;
+    bottom: 225px;
+    font-size: 21px;
+    font-family: AsimovProBd;
+    color: #69696f;
+}
+.dosunoimg{
+    width: 48px;
+    position: relative;
+    bottom: 416px;
+    left: 135px;
+}
+.blanco{
+    color: white;
+}
+
+.dosunodos{
+
+}
+.dosdos{
+    color:#202e41;
+}
+.negro{
+    color: #202e41;
+}
+.imgabajo{
+    position: relative;
+    top: 25px;
+    width: 430px;
+}
+.imgarriba{
+    position: relative;
+    bottom: 655px;
+    width: 430px;
+}
+.dos{
+    position: relative;
+    top: 45px;
+}

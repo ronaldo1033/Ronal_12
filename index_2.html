@@ -9,24 +9,89 @@
 </head>
 <body>
     <div class="contenedor">
-    <div class="uno" style="text-align: center;">
-        <img src="img/3.gif" id="unoimg" style="display: inline-block;">
-    </div>
-    <div class="dos">
-        
-            <h2 class="dostext">¡Yapeaste!</h2>
-            <p class="dosuno"><span class="dosuno" id="nombreMostrado"></span></p>
-            
-            <p class="dostres"><span class="dostres" id="cantidadMostrada"></span></p>
-    
-    <div class="dosuno1">
-        <p class="dosunodos">Nº de celular:</p>
-        <p class="blanco">  l</p>
-        <span> </span>
-        <p class="dosdos"> <span class="dosdos" id="numeroMostrado"></span></p>
-    </div>
-    
+        <div class="uno">
+            <div class="uno" style="text-align: center;">
+                <img src="img/3.jpg" id="unoimg" style="display: inline-block;" width="100%">
+            </div>
+        </div>
 
+        <div class="dos" style="text-align: center;">
+            <div class="dosuno">
+                <img src="img/bordearriba.png" alt="" class="unoimg2">
+                <img src="img/15.jpg"  class="dosunoimg" style="display: inline-block;" width="50%">
+                <h2 class="dosunotext">¡Yapeaste!</h2>
+            </div>
+            <div class="dosdos" style="text-align: center;">
+                <img src="img/4.jpeg" alt="" class="dosdosimg" style="display: inline-block;">
+                <p class="dosdostext"><span class="dosdostext" id="cantidadMostrada"></span></p>
+            </div>
+            <div class="dostres" style="text-align: center;">
+                <p class="dostrestext"><span class="dostrestext" id="nombreMostrado"></span></p>
+
+                <script>
+                    function mostrarFechaYHora() {
+                        var fecha = new Date(); // Obtiene la fecha y hora actual
+                        var day = fecha.getDate();
+                        var monthNames = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "set", "oct", "nov", "dic"];
+                        var monthIndex = fecha.getMonth();
+                        var year = fecha.getFullYear();
+                        var hours = fecha.getHours();
+                        var minutes = fecha.getMinutes();
+                        var ampm = hours >= 12 ? 'pm' : 'am';
+                        hours = hours % 12;
+                        hours = hours ? (hours < 10 ? '0' + hours : hours) : '12';
+                        minutes = minutes < 10 ? '0' + minutes : minutes;
+            
+                        var fechaActual = day + " " + monthNames[monthIndex] + ". " + year + " - " + hours + ":" + minutes + " " + ampm;
+            
+                        // Muestra la fecha y hora en un elemento HTML
+                        document.getElementById("fechaYHora").textContent = fechaActual;
+                    }
+            
+                    // Llama a la función al cargar la página
+                    window.onload = mostrarFechaYHora;
+                </script>
+                 <div id="fechaYHora"></div>
+                 
+
+            </div>
+            <div class="doscuatro" style="text-align: center;">
+                <p class="doscuatrotext1">Nº de celular:</p>
+                <p class="blanco">  l</p>
+                <span> </span>
+                <p class="doscuatrotext2"> <span class="doscuatrotext2" id="numeroMostrado"></span></p>
+            </div>
+            <div class="doscinco" >
+                <p class="doscincotext">Destino:</p> 
+                <p class="blanco">  l</p>
+                <p class="negro">Yape</p>
+            </div>
+            <div class="dosseis">
+                <p class="dosseistext">Nº de operacion: </p>
+                <p class="blanco">  l</p>  
+                <p class="negro">03843100</p>
+            </div>
+            <div class="dossiete">
+                <img src="img/bordeabajo.png" alt="" class="dossieteimg">
+            </div>
+        
+
+
+
+
+        </div>
+
+        <div class="tres" style="text-align: center;">
+            <div class="tresuno" style="text-align: center;">
+                <img class="tresunoimg" src="img/2.png" width="200px" style="display: inline-block;">
+            </div>
+            <div class="tresdos">
+                <p class="tresdosuno">Compartir</p>
+                <p class="tresdosdos">Ir a inicio</p>
+                <p class="tresdostres">Mis promos</p>
+            </div>
+        </div>
+    </div>
     <script>
         var params = new URLSearchParams(window.location.search);
         var nombre = params.get("nombre");
@@ -37,51 +102,6 @@
         document.getElementById("numeroMostrado").textContent = numero;
         document.getElementById("cantidadMostrada").textContent = cantidad;
     </script>
-    <div class="dos1">
-        <p>Destino:</p> 
-        <p class="blanco">  l</p>
-        <p class="negro">Yape</p>
-    </div>
-    <div class="dos2">
-        <p>Nº de operacion: </p>
-        <p class="blanco">  l</p>  
-        <p class="negro">03843100</p>
-    </div>
-    <script>
-        function mostrarFechaYHora() {
-            var fecha = new Date(); // Obtiene la fecha y hora actual
-            var day = fecha.getDate();
-            var monthNames = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "set", "oct", "nov", "dic"];
-            var monthIndex = fecha.getMonth();
-            var year = fecha.getFullYear();
-            var hours = fecha.getHours();
-            var minutes = fecha.getMinutes();
-            var ampm = hours >= 12 ? 'pm' : 'am';
-            hours = hours % 12;
-            hours = hours ? (hours < 10 ? '0' + hours : hours) : '12';
-            minutes = minutes < 10 ? '0' + minutes : minutes;
 
-            var fechaActual = day + " " + monthNames[monthIndex] + ". " + year + " - " + hours + ":" + minutes + " " + ampm;
-
-            // Muestra la fecha y hora en un elemento HTML
-            document.getElementById("fechaYHora").textContent = fechaActual;
-        }
-
-        // Llama a la función al cargar la página
-        window.onload = mostrarFechaYHora;
-    </script>
-     <div id="fechaYHora"></div>
-   <div id="fechaYHora"></div>
-   <img src="img/4.jpeg" alt="" class="dosunoimg">
-    </div>
-
-    <div class="bordesimg" style="text-align: center;">
-        <img class="imgabajo"  src="img/bordes.png" style="display: inline-block;">
-        <img src="img/bordesarriba.png" alt="" class="imgarriba" style="display: inline-block;" >
-    </div>
-    <div class="tres" style="text-align: center;">
-        <img id="tresimg" src="img/2.png" alt="" style="display: inline-block;">
-    </div>
-    </div>
 </body>
 </html>

@@ -3,169 +3,247 @@
     margin: 0;
     padding: 0;
 }
+body{
+
+    margin: auto;
+
+}
 .contenedor{
 
-    background: rgb(122, 48, 137);
-    margin: auto;
     width: 100%;
-    max-width: 900px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
+    height: 68em;
+    margin: auto;
+    background: linear-gradient(to bottom, 
+    #400c4a 0%,  /* Color en la parte superior (0%) */
+    #400c4a 25%, /* Color en el medio (50%) */
+    #742284 50%,
+    #742284 100% /* Color en la parte inferior (100%) */
+    );
 }
 .uno{
-    height: 14em;
-
     
+    height: 21%;
 }
 #unoimg{
-    width: 80px;
-    margin-top: 5em;
+    width: 100%;
+    height: 515%;
 }
+
 .dos{
-  
-    height: 40.2em;
+
+    height: 60.6%;
+    margin-left: 2.8em;
+    margin-right: 2.8em;
     background: white;
-    margin-left: 3em;
-    margin-right: 3em;
+    
+}
+.dosuno{
+
+    height: 21%;
+}
+.dosunoimg{
+    width: 38%;
+    height: 18%;
+    margin-top: 2.7em;
+}
+.dosunotext{
+    font-size: 37px;
+    color: #732383;
+    font-family: AsimovProBd;
+    margin-top: 0.6em;
 }
 
-.dos > p{
-    text-align: center;
-  
+
+.dosdos{
+
+    height: 19%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dosdosimg{
+    width: 12%;
+    margin-top: 2.5em;
+   
+}
+.unoimg2{
+    width: 100%;
+
+}
+.dosdostext{
+    font-family: roboto;
+    color: #742284;
+    font-size: 85px;
+    margin-top: 0.9em;
+    margin-right: 0.15em;
 }
 
-.dos .dosuno {
-    margin-top: 50%;
-    position: relative;
-    top: 16px;
+
+.dostres{
+    height: 18%;
+    
+}
+.dostrestext{
     font-size: 30px;
     font-family: Asimov Print D font;
     font-weight: 500;
     color: #202e41;
-
-}
-.dos .dosdos{
-   
-    text-align: center;
-    display: inline;
-
-}
-.dosunodos{
-    display: inline;
-}
-.dos .dostres {
-    color: #742284;
-    position: relative;
-    bottom: 67px;
-    font-size: 85px;
-    margin-left: 0.22em;
-    font-family: roboto;
-}
-
-
-.dos h2{
-    text-align: center;
-    position: relative;
-    top: 60px;
-    font-size: 37px;
-    color: #732383;
-    font-family: AsimovProBd;
-}
-
-
-
-.tres{
-    height: 14em;
-}
-#tresimg{
-    margin-top: 0.9em;
-    width: 65%;
-    height: 64%;
-}
-html{
-    background: rgb(122, 48, 137);
-}
-
-.dosuno1{
-    border-top: 1px solid rgb(231, 228, 228);
-    border-bottom: 1px solid rgb(231, 228, 228);
-    position: relative;
-    top: 30px;
-    text-align: center;
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: AsimovProBd;
-    color: #97979c;
-    font-size: 20px;
-}
-.dos1{
-  
-    text-align: center;
-    position: relative;
-    top: 30px;
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: AsimovProBd;
-    color: #97979c;
-    font-size: 20px;
-}
-.dos2{
-    border-top: 1px solid rgb(231, 228, 228);
-    border-bottom: 1px solid rgb(231, 228, 228);
-    text-align: center;
-    position: relative;
-    top: 30px;
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: AsimovProBd;
-    color: #97979c;
-    font-size: 20px;
+    margin-top: 2em;
 }
 #fechaYHora{
-    text-align: center;
-    position: relative;
-    bottom: 225px;
     font-size: 21px;
     font-family: AsimovProBd;
     color: #69696f;
+    margin-top: 0.5em;
+
 }
-.dosunoimg{
-    width: 48px;
+
+.doscuatro{
+    border-top: 1px solid rgb(231, 228, 228);
+    border-bottom: 1px solid rgb(231, 228, 228);
+    margin-top: ;
+    height: 8.5%;
+    font-family: AsimovProBd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.doscuatrotext1{
+    display: inline;
+    font-family: AsimovProBd;
+    color: #97979c;
+    font-size: 20px;
+}
+
+.doscuatrotext2{
+    display: inline;
+    font-size: 20px;
+    
+}
+
+
+.doscinco{
+    height: 8.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.doscinco > p{
+    display: inline;
+    font-family: AsimovProBd;
+    font-size: 20px;
+}
+.doscincotext{
+    font-family: AsimovProBd;
+    color: #97979c;
+    font-size: 20px;
+}
+
+
+
+.dosseis{
+
+    height: 8.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(231, 228, 228);
+    border-bottom: 1px solid rgb(231, 228, 228);
+}
+.dosseis > p{
+    display: inline;
+    font-size: 20px;
+    font-family: AsimovProBd;
+}
+.dosseistext{
+    font-family: AsimovProBd;
+    color: #97979c;
+    font-size: 20px;
+}
+
+
+
+.dossiete{
+   
+
+}
+.dossieteimg{
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+
+.tres{
+    height: 17.7%;
+}
+.tresuno{
+
+    height: 60%;
+}
+.tresdos{
+
+    height: 37%;
+}
+.tresunoimg{
+    width: 67%;
+    height: 122%;
+    margin-top: 2.5em;
+}
+.tresdos > p{
+    display: inline;
+}
+.tresdosuno{
+    font-family: AsimovProBd;
+    color: white;
     position: relative;
-    bottom: 416px;
-    left: 135px;
+    top: 20px;
+    right: 47px;
+    font-size: 19px;
+}
+.tresdosdos{
+    font-family: AsimovProBd;
+    color: white;
+    position: relative;
+    left: 6px;
+    top: 20px;
+
+    font-size: 19px;
+}
+.tresdostres{
+    font-family: AsimovProBd;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    font-size: 19px;
+}
+
+
+
+
+html{
+    background: #742284;
+}
+
+.negro{
+    display: inline;
+    
 }
 .blanco{
     color: white;
+    display: inline;
 }
-
-.dosunodos{
-
+#nombreMostrado{
+    white-space: nowrap;
 }
-.dosdos{
-    color:#202e41;
+#nombreMostrado::after {
+    content: "\A"; /* Agrega un salto de línea después de las tres primeras palabras */
+    white-space: normal;
 }
-.negro{
-    color: #202e41;
+.dostrestext{
+    white-space: nowrap;
 }
-.imgabajo{
-    position: relative;
-    top: 25px;
-    width: 430px;
-}
-.imgarriba{
-    position: relative;
-    bottom: 655px;
-    width: 430px;
-}
-.dos{
-    position: relative;
-    top: 45px;
+.dostrestext::after {
+    content: "\A"; /* Agrega un salto de línea después de las tres primeras palabras */
+    white-space: normal;
 }

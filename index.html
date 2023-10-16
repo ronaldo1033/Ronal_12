@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "tucontraseña") {
+                document.getElementById("loginForm").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Contraseña incorrecta");
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="contenedor">
@@ -43,5 +54,7 @@
             </script>
         </div>
     </div>
+    
 </body>
+
 </html>

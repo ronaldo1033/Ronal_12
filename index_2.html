@@ -26,8 +26,10 @@
                 <p class="dosdostext"><span class="dosdostext" id="cantidadMostrada"></span></p>
             </div>
             <div class="dostres" style="text-align: center;">
-                <p class="dostrestext"><span class="dostrestext" id="nombreMostrado"></span></p>
-
+                <p class="dostrestext">
+                    <span class="dostrestext" id="primerasTresPalabras"></span><br>
+                    <span class="dostrestext" id="ultimaPalabra"></span>
+                </p>
                 <script>
                     function mostrarFechaYHora() {
                         var fecha = new Date(); // Obtiene la fecha y hora actual
@@ -97,8 +99,19 @@
         var nombre = params.get("nombre");
         var numero = params.get("numero");
         var cantidad = params.get("cantidad");
-
-        document.getElementById("nombreMostrado").textContent = nombre;
+    
+        // Separar el nombre en palabras
+        var palabras = nombre.split(' ');
+    
+        // Obtener las tres primeras palabras
+        var primerasTresPalabras = palabras.slice(0, 3).join(' ');
+        // Obtener la última palabra
+        var ultimaPalabra = palabras.slice(3).join(' ');
+    
+        // Mostrar las palabras en los elementos HTML correspondientes
+        document.getElementById("primerasTresPalabras").textContent = primerasTresPalabras;
+        document.getElementById("ultimaPalabra").textContent = ultimaPalabra;
+    
         document.getElementById("numeroMostrado").textContent = numero;
         document.getElementById("cantidadMostrada").textContent = cantidad;
     </script>
